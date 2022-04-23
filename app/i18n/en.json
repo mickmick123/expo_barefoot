@@ -24,8 +24,9 @@
     "webReactotronHint": "If this doesn't work, ensure the Reactotron desktop app is running and reload app.",
     "windowsReactotronHint": "If this doesn't work, ensure the Reactotron desktop app is running and reload app."
   },
-  "demoListScreen": {
-    "title": "Demo List"
+  "barefoot": {
+    "eventTitle": "Events",
+    "storeTitle": "Stores"
   },
   "errorScreen": {
     "title": "Something went wrong!",

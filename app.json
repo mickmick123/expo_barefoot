@@ -7,19 +7,40 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Barefoot accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
     "updates": {
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [
       "**/*"
     ],
+    "android": {
+      "package": "com.barefoot",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAPpx8MaSAYINt-5nO5mGi2x6dxfX16NyQ"
+        }
+      }
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.barefoot",
+      "config": {
+        "googleMapsApiKey": "AIzaSyAKf4KI53oFRZyKXzJs7gTuaYPnOlqjDAU"
+      }
     },
     "web": {
       "favicon": "./assets/images/favicon.png"

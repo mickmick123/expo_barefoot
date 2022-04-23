@@ -1,7 +1,9 @@
 // Use this import if you want to use "env.js" file
 // const { API_URL } = require("../../config/env")
 // Or just specify it directly like this:
-const API_URL = "http://example.com"
+const API_URL = "https://us-central1-barefoot-dev-299405.cloudfunctions.net/api"
+
+// const API_URL = "http://localhost:5001/barefoot-dev-299405/us-central1/api"
 
 /**
  * The options used to configure the API.

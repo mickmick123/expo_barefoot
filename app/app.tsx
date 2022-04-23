@@ -19,6 +19,7 @@ import { AppNavigator, useNavigationPersistence } from "./navigators"
 import { RootStore, RootStoreProvider, setupRootStore } from "./models"
 import { ToggleStorybook } from "../storybook/toggle-storybook"
 import { ErrorBoundary } from "./screens/error/error-boundary"
+import { initializeApp } from "firebase/app"
 
 // This puts screens in a native ViewController or Activity. If you want fully native
 // stack navigation, use `createNativeStackNavigator` in place of `createStackNavigator`:
@@ -26,6 +27,20 @@ import { ErrorBoundary } from "./screens/error/error-boundary"
 
 export const NAVIGATION_PERSISTENCE_KEY = "NAVIGATION_STATE"
 
+const firebaseConfig = {
+  apiKey: "AIzaSyB8N6Q_rVr1qNGuu-Nu8kJhbEVVeye8lmY",
+  authDomain: "barefoot-dev-299405.firebaseapp.com",
+  databaseURL: "https://barefoot-dev-299405-default-rtdb.firebaseio.com",
+  projectId: "barefoot-dev-299405",
+  storageBucket: "barefoot-dev-299405.appspot.com",
+  messagingSenderId: "890896973016",
+  appId: "1:890896973016:web:84879e3f0651f12fd6ebad",
+  measurementId: "G-0KRTKP8PBM"
+};
+
+
+// Initialize Firebase
+initializeApp(firebaseConfig);
 /**
  * This is the root component of our app.
  */
